@@ -14,3 +14,61 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.headerImage {
+  background: url('../public/Images/wave.jpeg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  height: 500px;
+  width:auto;
+  width: auto;
+  text-align: center;
+}
+
+.introName {
+  padding-top: 2.5em;
+  font-size: 60px;
+  animation-name: name;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.introPara {
+  animation-name: description;
+  animation-duration: 2s;
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 8em;
+}
+
+.introName,
+.introPara {
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes name {
+  0% {
+    opacity: 0.1;
+    left: 20%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes description {
+  0% {
+    opacity: 0.1;
+    right: 20%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
